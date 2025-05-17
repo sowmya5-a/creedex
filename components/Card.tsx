@@ -1,7 +1,8 @@
+import Image from 'next/image';
 export default function Card() {
   return (
     <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-      <img className="w-full h-48 object-cover" src="/images/sample.jpg" alt="Sample" />
+      <Image className="w-full h-48 object-cover" src="/images/sample.jpg" alt="Sample" />
       <div className="p-6">
         <h2 className="text-xl font-semibold mb-2">Card Title</h2>
         <p className="text-gray-700 mb-4">
