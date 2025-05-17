@@ -52,9 +52,9 @@ const Tag = as as React.ElementType
       >
         {label}
       </label>
-      {props['data-has-error'] && (
-        <p className="mt-1 text-xs text-red-400">{props['data-has-error']}</p>
-      )}
+      { 
+        <p className="mt-1 text-xs text-red-400"></p>
+      }
     </div>
   )
 }
