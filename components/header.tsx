@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-
+import Image from 'next/image';
 export default function Header() {
   return (
      <header
@@ -17,7 +17,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3">
-          <img src="/logo.png" alt="SoftSell" className="h-8 w-auto" />
+          <Image src="/logo.png" alt="SoftSell" className="h-8 w-auto" />
           <span className="text-white text-xl font-bold">SoftSell</span>
         </Link>
 
