@@ -29,7 +29,7 @@ export default function Hero() {
     }, 500)
     return () => clearInterval(blink)
   }, [])
- const subtitleDelay = fullText.length * 0.1 + 0.3
+
   return (
     <section className="w-full text-center py-16 " id="hero">
       <h1 className="mx-auto max-w-3xl text-4xl md:text-5xl lg:text-3xl font-extrabold leading-tight text-white">
