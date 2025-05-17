@@ -38,7 +38,7 @@ const looped = [...reviews, ...reviews]
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 ">
+    <section id="testimonials" className="py-20">
       <h2 className="text-4xl font-bold text-center text-white mb-8">
         What Our Customers Say
       </h2>
@@ -58,8 +58,13 @@ export default function Testimonials() {
                 height={64}
                 className="rounded-full mr-4"
               />
+
               <div>
-                <p className="text-white mb-2">"{r.text}"</p>
+                {/* escape the quotes as HTML entities */}
+                <p className="text-white mb-2">
+                  &quot;{r.text}&quot;
+                </p>
+
                 <p className="text-gray-400 text-sm">
                   — {r.name}, {r.role} at {r.company}
                 </p>
