@@ -35,7 +35,7 @@ const Tag = as as React.ElementType
           rounded-lg border-2 transition
           focus:border-indigo-400 focus:outline-none
           text-white placeholder-transparent
-          ${props['data-has-error'] ? 'border-red-500' : 'border-transparent'}
+          
         `}
         {...props}
       >
