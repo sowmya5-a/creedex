@@ -1,0 +1,40 @@
+/* main.css */
+
+/* scroll the reviews up infinitely */
+@keyframes scrollUp {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+/* 
+  Apply a continuous upward scroll 
+  over 12s, looping forever. Tweak timing to taste.
+*/
+.scroll-vert {
+  animation: scrollUp 12s linear infinite;
+}
+
+body {
+  /* from very dark navy → mid-blue highlight → very dark navy */
+ background: linear-gradient(
+      135deg,
+      #08080f 0%,
+      #14141e 50%,
+      #1a1a2e 100%
+    );
+    color: white;
+  }
+
+/* Make all links and buttons default to white text */
+/* blinking is handled in the component, but if you want to customize: */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* you could instead give your cursor span a className="cursor" and apply: */
+/*
+.cursor {
+  animation: blink 1s step-start infinite;
+}
+*/
