@@ -38,31 +38,40 @@ export default function ChatWidget() {
   // Closed → just the “Ask us…” pill
   if (!isOpen) {
     return (
-     <button
-  onClick={() => setIsOpen(true)}
-  className="
-    fixed bottom-6 right-6
-    inline-block
-    bg-gray-900/60 backdrop-blur-lg
-    text-white font-semibold
-    px-6 py-3
-    rounded-full
-    shadow-[0_0_20px_rgba(94,117,255,0.25)]
-    ring-1 ring-white/10
-    hover:shadow-[0_0_25px_rgba(94,117,255,0.35)]
-    transition
-    mb-6
-  "
->
-  Ask us…
-</button>
-
+      <button
+        onClick={() => setIsOpen(true)}
+        className="
+          fixed bottom-4 right-4 sm:bottom-6 sm:right-6
+          inline-block
+          bg-gray-900/60 backdrop-blur-lg
+          text-white font-semibold
+          px-4 py-2 sm:px-6 sm:py-3
+          rounded-full
+          shadow-[0_0_20px_rgba(94,117,255,0.25)]
+          ring-1 ring-white/10
+          hover:shadow-[0_0_25px_rgba(94,117,255,0.35)]
+          transition
+          mb-6
+        "
+      >
+        Ask us…
+      </button>
     );
   }
 
   // Open → full chat panel
   return (
-    <div className="fixed bottom-6 right-6 w-80 h-[500px] bg-black text-white shadow-2xl rounded-lg flex flex-col overflow-hidden p-6">
+    <div
+      className="
+        fixed bottom-4 right-4 sm:bottom-6 sm:right-6
+        w-[90vw] max-w-xs sm:w-80
+        h-[60vh] sm:h-[500px]
+        bg-black text-white
+        shadow-2xl rounded-lg
+        flex flex-col overflow-hidden
+        p-4 sm:p-6
+      "
+    >
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <span className="text-lg font-semibold">Chat with us</span>
