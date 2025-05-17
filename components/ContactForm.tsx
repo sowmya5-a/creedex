@@ -22,7 +22,7 @@ function FloatingField({
 } & React.InputHTMLAttributes<HTMLInputElement> &
   React.TextareaHTMLAttributes<HTMLTextAreaElement> &
   React.SelectHTMLAttributes<HTMLSelectElement>) {
-  const Tag = as as any
+const Tag = as as React.ElementType
   return (
     <div className="relative">
       <Tag
